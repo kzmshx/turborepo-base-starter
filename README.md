@@ -1,7 +1,7 @@
-# turborepo-empty-starter
+# turborepo-base-starter
 
-An empty Turborepo starter.
+Turborepo starter - Base.
 
-```
-npx create-turbo -e https://github.com/tknickman/turborepo-empty-starter
+```sh
+pnpx create-turbo@latest -e https://github.com/kzmshx/turborepo-base-starter
 ```
