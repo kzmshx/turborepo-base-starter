@@ -1,0 +1,3 @@
+# main
+main/root/.zsh*
+!main/root/.zsh*.tmpl

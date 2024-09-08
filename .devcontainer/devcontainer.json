@@ -1,0 +1,54 @@
+{
+	"name": "turborepo-base-starter",
+
+	/** docker compose settings */
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "main",
+	"workspaceFolder": "/workspace",
+
+	/** main container settings */
+	"features": {},
+	"forwardPorts": [],
+	"remoteUser": "root",
+
+	/** lifecycle hooks */
+	"initializeCommand": "zsh .devcontainer/lifecycle/initialize.sh",
+	"postCreateCommand": "zsh .devcontainer/lifecycle/post-create.sh",
+
+	/** editor settings */
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"biomejs.biome",
+				"dotenv.dotenv-vscode",
+				"folke.vscode-monorepo-workspace",
+				"github.copilot",
+				"github.copilot-chat",
+				"github.vscode-github-actions",
+				"me-dutour-mathieu.vscode-github-actions",
+				"ms-azuretools.vscode-docker",
+				"yoavbls.pretty-ts-errors"
+			],
+			"settings": {
+				"editor.codeActionsOnSave": {
+					"quickfix.biome": "explicit",
+					"source.addMissingImports": "explicit",
+					"source.organizeImports.biome": "explicit"
+				},
+				"editor.defaultFormatter": "biomejs.biome",
+				"editor.formatOnSave": true,
+				"editor.linkedEditing": true,
+				"editor.quickSuggestions": {
+					"other": "on",
+					"comments": "off",
+					"strings": "on"
+				},
+				"files.associations": {
+					".zshrc": "shellscript",
+					".zshrc.tmpl": "shellscript"
+				},
+				"terminal.integrated.defaultProfile.linux": "zsh"
+			}
+		}
+	}
+}
