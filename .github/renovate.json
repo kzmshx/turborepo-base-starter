@@ -9,7 +9,7 @@
 	],
 	"extends": [
 		"config:js-app",
-		"schedule:earlyMondays",
+		"schedule:daily",
 		":disableDependencyDashboard",
 		":timezone(Asia/Tokyo)"
 	],
