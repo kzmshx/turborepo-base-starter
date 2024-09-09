@@ -1,6 +1,6 @@
 services:
   main:
-    image: mcr.microsoft.com/devcontainers/javascript-node:20-bookworm
+    image: mcr.microsoft.com/devcontainers/javascript-node:22-bookworm
     volumes:
       - ..:/workspace:cached
       - ./main/root/.zsh_history:/root/.zsh_history
